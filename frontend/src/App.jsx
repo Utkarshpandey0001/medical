@@ -10,9 +10,10 @@ import Appointment from './pages/Appointment'
 import MyAppointments from './pages/MyAppointments'
 import MyProfile from './pages/MyProfile'
 import Footer from './components/Footer'
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import Verify from './pages/Verify'
+import ChatbotWidget from './components/ChatbotWidget'
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
         <Route path='/verify' element={<Verify />} />
       </Routes>
       <Footer />
+      <ChatbotWidget />
     </div>
   )
 }
